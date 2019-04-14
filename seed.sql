@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS top_songsDB;
+DROP DATABASE IF EXISTS bamazon;
 CREATE database bamazon;
 
 USE bamazon;
@@ -13,8 +13,9 @@ CREATE TABLE products (
 );
 
 CREATE TABLE sales (
+    sale_id INT (16) NOT NULL auto_increment, 
 	item_id INT(11) NOT NULL,
     sold_quantity INT(9) NULL,
-    primary key (item_id)
+    primary key (sale_id)
     );
   
